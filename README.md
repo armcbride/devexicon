@@ -8,7 +8,7 @@
 * 
 
 # Contributors
-*Annaruth McBride
-*Garrett Griffey
-*Greg Clark
-*Rogerson Jean-Charles
+* Annaruth McBride
+* Garrett Griffey
+* Greg Clark
+* Rogerson Jean-Charles
