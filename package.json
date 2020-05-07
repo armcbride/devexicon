@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gregroyclark/awesomeProject.git"
+    "url": "git+https://github.com/gregroyclark/devexicon.git"
   },
   "author": "Node Diggity - Annaruth McBride, Greg Clark, Garrett Griffey, Rogerson Jean-Charles",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gregroyclark/awesomeProject/issues"
+    "url": "https://github.com/gregroyclark/devexicon/issues"
   },
-  "homepage": "https://github.com/gregroyclark/awesomeProject#readme",
+  "homepage": "https://github.com/gregroyclark/devexicon#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
