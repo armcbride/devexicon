@@ -1,4 +1,4 @@
-# awesomeProject
+# Devexicon
 
 # Technologies
 * MySQL/Sequelize
