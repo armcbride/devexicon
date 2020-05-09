@@ -1,21 +1,26 @@
 module.exports = function(sequelize, DataTypes) {
-    var Todo = sequelize.define("Todo", {
-      text: {
+    var definitions = sequelize.define("Definitions", {
+      title: {
         type: DataTypes.STRING,
-        // AllowNull is a flag that restricts a todo from being entered if it doesn't
-        // have a text value
         allowNull: false,
-        // len is a validation that checks that our todo is between 1 and 140 characters
         validate: {
-          len: [1, 140]
+          len: [1, 160]
         }
       },
-      complete: {
-        type: DataTypes.BOOLEAN,
-        // defaultValue is a flag that defaults a new todos complete value to false if
-        // it isn't supplied one
-        defaultValue: false
+      definition: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        len: [1]
+      },
+      example: {
+        type: DataTypes.TEXT,
+        allowNull: false,
+        len: [1]
+      },
+      category: {
+        type: DataTypes.STRING,
+        allowNull: false,
       }
     });
-    return Todo;
+    return definitions;
   };
