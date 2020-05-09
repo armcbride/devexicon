@@ -1,4 +1,4 @@
 # definitions 
-- api-routes
-- models
-- sequelize
+- api-routes: 
+- models:
+- sequelize:  

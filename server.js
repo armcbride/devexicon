@@ -1,8 +1,12 @@
 var express = require("express");
-require('dotenv').config();
-var PORT = process.env.PORT || 8080;
 
+require('dotenv').config();
+
+var PORT = process.env.PORT || 8080;
 var app = express();
+
+//requiring models to sync
+var db = require("./models");
 
 app.use(express.static("public"));
 
@@ -18,8 +22,12 @@ app.use(express.json());
 // brings routes from controller.js
 // var routes = require("./controllers/awesomeController.js");
 
-app.use(routes);
+//ROUTES
+require("./routes/api-routes.js")(app);
+// app.use(routes);
 
-app.listen(PORT, function() {
-    console.log(`Server listening on: http://localhost:${PORT}`);
+db.sequelize.sync({ force: true }).then(function() {
+  app.listen(PORT, function() {
+    console.log(`App listening on PORT: http://localhost:${PORT}`);
   });
+});

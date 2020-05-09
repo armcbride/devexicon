@@ -2,7 +2,7 @@
   "development": {
     "username": "root",
     "password": "Aa6844598",
-    "database": "database_development",
+    "database": "devexicon_DB",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -10,7 +10,7 @@
   "test": {
     "username": "root",
     "password": "Aa6844598",
-    "database": "database_test",
+    "database": "devexicon_DB",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
@@ -18,7 +18,7 @@
   "production": {
     "username": "root",
     "password": "Aa6844598",
-    "database": "database_production",
+    "database": "devexicon_DB",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
