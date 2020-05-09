@@ -21,5 +21,29 @@ module.exports = function(app){
       });
   });
 
-
+  //POST route for creating a new definition
+  app.post("/api/definition", function(req, res) {
+    console.log(req.body);
+    db.Definitions.create({
+      title: req.body.title,
+      definition: req.body.definition,
+      example: req.body.example,
+      category: req.body.category
+    })
+      .then(function(dbDefinitions) {
+        res.json(dbDefinitions);
+      });
+  });
+  
+// DELETE Route for deleting definitions
+  app.delete("/api/definitions/:id", function(req, res) {
+    db.Definitions.destroy({
+      where: {
+        id: req.params.id
+      }
+    })
+      .then(function(dbDefinitions) {
+        res.json(dbDefinitions);
+      });
+  });
 }
