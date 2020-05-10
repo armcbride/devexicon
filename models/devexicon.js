@@ -1,6 +1,6 @@
 module.exports = function(sequelize, DataTypes) {
     var Definitions = sequelize.define("Definitions", {
-      title: {
+      topic: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {

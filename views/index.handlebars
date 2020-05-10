@@ -3,13 +3,13 @@
 <h2>Language</h2>
 
 <ul>
-    {{#each title}}
+    {{#each topic}}
     <li>
         <p>
-            {{this.id}}.{{this.title}}
+            {{this.id}}.{{this.topic}}
 
-            <button data-titleid="{{this.id}}"
-            class="deltitle">Delete Topic</button>
+            <button data-topicid="{{this.id}}"
+            class="deltopic">Delete Topic</button>
         </p>
     </li>
     {{/each}}
@@ -24,20 +24,20 @@
 <h2>Update A Topic</h2>
 <form id="updatetopic" class="button-size">
     <select name="id">
-        {{#each title}
-            <option value="{{this.id}}">{{this.title}}</option>
+        {{#each topic}
+            <option value="{{this.id}}">{{this.topic}}</option>
         {{/each}}    
     </select>
-    <textarea type="text" name="title" placeholder="title"></textarea>
+    <textarea type="text" name="topic" placeholder="topic"></textarea>
     <button type="submit">Update Topic</button>
 </form>     
 
 <script type="text/javascript">
-    $(".deltitle").on("click", function(event) {
-        var id = $(this).data("planid");
+    $(".deltopic").on("click", function(event) {
+        var id = $(this).data("topicid");
 
         //Delete request
-        &.ajax("/api/title/" + id, {
+        &.ajax("/api/topic/" + id, {
             type: "DELETE"
         }).then(
             function() {
@@ -54,9 +54,9 @@ $("#createtopic").on("submit", function(event) {
     };
 
     \\send POST request
-    $.ajax("/api/plans", {
+    $.ajax("/api/topic", {
         type: "POST",
-        data: newTitle
+        data: newTopic
     }).then(
         function() {
             console.log("created new topic");
@@ -69,11 +69,11 @@ $("#updatetopic").on("submit", function(event) {
     event.preventDefault();
     var id = $("[name=id]").val().trim();
 
-    var updatedTopic = $("#updatetopic [name=title]").val().trim()
+    var updatedTopic = $("#updatetopic [name=topic]").val().trim()
 };
 
 //send PUT request
-$.ajax("/api/title/" + id, {
+$.ajax("/api/topic/" + id, {
     type: "PUT",
     data: updatedTopic
 }).then(
