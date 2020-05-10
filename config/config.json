@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "Aa6844598",
+    "password": "root",
     "database": "devexicon_DB",
     "host": "127.0.0.1",
     "dialect": "mysql",
