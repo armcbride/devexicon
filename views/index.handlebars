@@ -1,0 +1,86 @@
+<h1>Devexicon</h1>
+
+<h2>Language</h2>
+
+<ul>
+    {{#each title}}
+    <li>
+        <p>
+            {{this.id}}.{{this.title}}
+
+            <button data-titleid="{{this.id}}"
+            class="deltitle">Delete Topic</button>
+        </p>
+    </li>
+    {{/each}}
+</ul>
+
+<h2>Create a Topic</h2>
+<form id="createtopic" class="button-size">
+    <textarea type="text" name="topic"></textarea>
+    <button type="submit">Save Topic</button>
+</form>           
+            
+<h2>Update A Topic</h2>
+<form id="updatetopic" class="button-size">
+    <select name="id">
+        {{#each title}
+            <option value="{{this.id}}">{{this.title}}</option>
+        {{/each}}    
+    </select>
+    <textarea type="text" name="title" placeholder="title"></textarea>
+    <button type="submit">Update Topic</button>
+</form>     
+
+<script type="text/javascript">
+    $(".deltitle").on("click", function(event) {
+        var id = $(this).data("planid");
+
+        //Delete request
+        &.ajax("/api/title/" + id, {
+            type: "DELETE"
+        }).then(
+            function() {
+                console.log("deleted id ", id);
+                location.reload();
+            }
+        );
+    });
+
+$("#createtopic").on("submit", function(event) {
+    event.preventDefault();
+    var newTopic = {
+        plan: $("#createtopic [name=topic]").val().trim()
+    };
+
+    \\send POST request
+    $.ajax("/api/plans", {
+        type: "POST",
+        data: newTitle
+    }).then(
+        function() {
+            console.log("created new topic");
+            location.reload();
+        }
+    );
+});
+
+$("#updatetopic").on("submit", function(event) {
+    event.preventDefault();
+    var id = $("[name=id]").val().trim();
+
+    var updatedTopic = $("#updatetopic [name=title]").val().trim()
+};
+
+//send PUT request
+$.ajax("/api/title/" + id, {
+    type: "PUT",
+    data: updatedTopic
+}).then(
+    function() {
+        console.log("updated id ", id);
+        location.reload();
+    }
+);
+});
+</script>
