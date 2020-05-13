@@ -41,7 +41,7 @@
 
    Garrett Griffey      
   <ul>
-  <li>Github: <a href= "https://github.com/armcbride">https://github.com/armcbride</a></li>
+  <li>Github: <a href= "https://github.com/garrettwgriffey">https://github.com/garrettwgriffeyv</a></li>
   <li>Portfolio: <a href= "http://garrettwgriffey.github.io">https://garrettwgriffey.github.io</a></li>
   <li>LinkedIn: <a href= "https://www.linkedin.com/in/garrettwgriffey">https://www.linkedin.com/in/garrettwgriffey</a></li>
   </ul>       
