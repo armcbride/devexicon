@@ -53,7 +53,7 @@ $("#createtopic").on("submit", function(event) {
         plan: $("#createtopic [name=topic]").val().trim()
     };
 
-    \\send POST request
+    //send POST request
     $.ajax("/api/topic", {
         type: "POST",
         data: newTopic
