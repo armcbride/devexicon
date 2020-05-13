@@ -1,26 +1,26 @@
 module.exports= {
-development: {
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB,
-  host: process.env.DB_HOST,
-  dialect: 'mysql',
-  logging: false
-},
-staging: {
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB,
-  host: process.env.DB_HOST,
-  dialect: 'mysql',
-  logging: false
-},
-production: {
-  username: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB,
-  host: process.env.DB_HOST,
-  dialect: 'mysql',
-  logging: false
+  development: {
+    username: DB_USER,
+    password: DB_PASSWORD,
+    database: DB,
+    host: DB_HOST,
+    dialect: "mysql",
+    operatorsAliases: false
+  },
+  test: {
+    username: DB_USER,
+    password: DB_PASSWORD,
+    database: DB,
+    host: DB_HOST,
+    dialect: "mysql",
+    operatorsAliases: false
+  },
+  production: {
+    username: DB_USER,
+    password: DB_PASSWORD,
+    database: DB,
+    host: DB_HOST,
+    dialect: "mysql",
+    operatorsAliases: false
+  }
 }
-};
