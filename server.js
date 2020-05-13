@@ -1,5 +1,6 @@
 var express = require("express");
-
+const path = require('path');
+const config = require(path.join(__dirname, '..', 'config', 'config.js'))[env];
 require('dotenv').config();
 
 var PORT = process.env.PORT || 8080;
