@@ -1,26 +1,26 @@
-{
-  "development": {
-    "username": "root",
-    "password": "root",
-    "database": "devexicon_DB",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+module.exports= {
+  development: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB,
+    host: process.env.DB_HOST,
+    dialect: "mysql",
+    operatorsAliases: false
   },
-  "test": {
-    "username": "root",
-    "password": "Aa6844598",
-    "database": "devexicon_DB",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+  test: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB,
+    host: process.env.DB_HOST,
+    dialect: "mysql",
+    operatorsAliases: false
   },
-  "production": {
-    "username": "root",
-    "password": "Aa6844598",
-    "database": "devexicon_DB",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+  production: {
+    username: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: process.env.DB,
+    host: process.env.DB_HOST,
+    dialect: "mysql",
+    operatorsAliases: false
   }
 }
