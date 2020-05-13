@@ -17,7 +17,7 @@ module.exports = function(sequelize, DataTypes) {
         allowNull: false,
         len: [1]
       },
-      category: {
+      language: {
         type: DataTypes.STRING,
         allowNull: false,
       }

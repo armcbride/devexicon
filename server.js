@@ -1,4 +1,4 @@
-var express = require("express");
+const express = require("express");
 
 require('dotenv').config();
 
@@ -24,6 +24,7 @@ app.use(express.json());
 
 //ROUTES
 require("./routes/api-routes.js")(app);
+require("./routes/html-routes.js")(app);
 // app.use(routes);
 
 db.sequelize.sync({ force: true }).then(function() {
