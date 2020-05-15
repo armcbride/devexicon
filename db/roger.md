@@ -1,11 +1,15 @@
 Javascript Data
-Javascript
-Flow: Title => Definition => Example => Category
 
-Javascript: A programming language used to make a site more interactable. N/A Category: Javascript
+Flow: Topic => Definition => Example
 
-Variables: Stores data values that can be used to add dynanicism to the application. Variables should have unique names that define the data that it holds. Ex: var home; Category: Javascript
+Javascript: A programming language used to make a site more interactable. N/A 
+
+Variables: Stores data values that can be used to add dynanicism to the application. Variables should have unique names that define the data that it holds. Ex: var car; 
 
 Functions: A set of statements that performs tasks or calculates a value. Ex: function numbers(num) {
     return num * num
-} Category: Javascript
+}; 
+
+Objects: A collection of named values. Ex. var car = {make:'Hyundai', model:'Sonata', color:'orange', year:2014};
+
+Properties: The values connected to an object. Ex. car.model
