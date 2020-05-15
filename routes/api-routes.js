@@ -10,10 +10,10 @@ module.exports = function(app){
   });
 
 //GET route for all in specific category
-  app.get("/api/definitions/category/:category", function(req, res) {
+  app.get("/api/definitions/language/:language", function(req, res) {
     db.Definitions.findAll({
       where: {
-        category: req.params.category
+        language: req.params.language
       }
     })
       .then(function(dbDefinitions) {
@@ -28,7 +28,7 @@ module.exports = function(app){
       title: req.body.title,
       definition: req.body.definition,
       example: req.body.example,
-      category: req.body.category
+      language: req.body.language
     })
       .then(function(dbDefinitions) {
         res.json(dbDefinitions);
