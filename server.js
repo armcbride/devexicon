@@ -2,11 +2,11 @@ const express = require("express");
 
 require('dotenv').config();
 
-var PORT = process.env.PORT || 8080;
-var app = express();
+const PORT = process.env.PORT || 8080;
+const app = express();
 
 //requiring models to sync
-var db = require("./models");
+const db = require("./models");
 
 app.use(express.static("public"));
 
