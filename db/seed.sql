@@ -11,7 +11,7 @@ INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('Functions','A set of statements that performs tasks or calculates a value','function numbers(num){ return num* num}','JavaScript');
 
 INSERT INTO Definitions (topic, definition, example, language)
-VALUES ('Objects','A collection of named values.','car = {make:'Hyundai', model:'Sonata', color:'orange', year:2014}','JavaScript');
+VALUES ('Objects','A collection of named values.','car = {make:"Hyundai", model:"Sonata", color:"orange", year: 2014}','JavaScript');
 
 INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('Properties', 'The values connected to an object.', 'car.model','javaScript');
