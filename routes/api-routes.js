@@ -25,7 +25,7 @@ module.exports = function(app){
   app.post("/api/definition", function(req, res) {
     console.log(req.body);
     db.Definitions.create({
-      title: req.body.title,
+      topic: req.body.topic,
       definition: req.body.definition,
       example: req.body.example,
       language: req.body.language

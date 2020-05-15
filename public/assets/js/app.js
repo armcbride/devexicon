@@ -1,8 +1,8 @@
 $(document).ready(function() {
     function getDefinitions() {
-        $.get('/api/definitions/', function(data) {
-            console.log(data);
-        })
-    }
+        $.get('/api/definitions/', function(data, status) {
+            console.log('Data: ' + data + '\nStatus: ' + status);
+        });
+    };
     getDefinitions();
 });
