@@ -16,8 +16,8 @@ $(document).ready(function() {
             example: $('#example').val().trim(),
             language: $('#language').val().trim()
         };
-        
-        $.post("api/definition", newDefinition).then(function(response){
+
+        $.post('api/definition', newDefinition).then(function(response){
             console.log(response);
         });
 
