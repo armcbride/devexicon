@@ -6,7 +6,7 @@ $(document).ready(function() {
         });
     };
     getDefinitions();
-    
+
     $('#add-btn').on('click', function(event){
         event.preventDefault();
 
@@ -16,6 +16,7 @@ $(document).ready(function() {
             example: $('#example').val().trim(),
             language: $('#language').val().trim()
         };
+        
         $.post("api/definition", newDefinition).then(function(response){
             console.log(response);
         });
