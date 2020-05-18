@@ -53,3 +53,6 @@ VALUES ('Property value','what the specific style being altered is going to be',
 
 INSERT INTO Definitions(topic, definition, example, language)
 VALUES ('Selectors','There are several categories of different selectors used to find the HTML elements to style: simple, combinator, pseudo-class, pseudo-elements selectors, and attribute selectors','simple: elements based on name, id, and class; combinator: elements based on a specific relationship between them; pseudo-class: elements based on a certain state; pseudo-elements: select and style part of an element; attribute: elements based on an attribute or attribute value','CSS');
+
+INSERT INTO Definitions(topic, definition, example, language)
+VALUES ('Inserting CSS', 'Three ways to add CSS to an HTML page: external: a link to a .css file, internal: css inside of <style></style> tags in the HTML file and inline: inside the HTML tag with a style attribute', '<link rel="stylesheet href="style.css> , <style> *{ background-color: black;}, or <h1 style="font-size: 12px;">Hello</h1>', 'CSS')
