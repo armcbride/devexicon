@@ -11,13 +11,13 @@ $(document).ready(function () {
          let li = $('<li/>')
           .appendTo(list);
 
-          li.append('<p>' + definition.id + '</p>');
-          li.append('<p>Topic: ' + definition.topic + '</p>');
-          li.append('<p>Definition: ' + definition.definition + '</p>');
-          li.append('<p>Example: ' + definition.example + '</p>');
-          li.append('<p>Language: ' + definition.language + '</p>');
-          li.append('<p>Created: ' + definition.createdAt + '</p>');
-          li.append('<p>Updated: ' + definition.updatedAt + '</p>');
+li.append(`<div class= "definitions">${definition.id}</p>
+          <p>Topic: ${definition.topic}</p>
+          <p>Definition: ${definition.definition}</p>
+          <p>Example: <textarea>${definition.example}</textarea></p>
+          <p>Language: ${definition.language}</p>
+          <p>Created: ${definition.createdAt}</p>
+          <p>Updated: ${definition.updatedAt}</p></div>`)
         });
       });
     };

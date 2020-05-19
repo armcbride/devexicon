@@ -5,39 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Devexicon</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css'/>
+
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css' integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU' crossorigin='anonymous'/>
+
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css'/>
+
+    <link rel='stylesheet' href='./assets/css/style.css'/>
     <!-- UIkit CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css'/>
 
   </head>
 
   <body>
+    <div class="container-body" style= "background-color: azure;">
     <nav class="navbar navbar-dark bg-dark">
       <a class="navbar-brand">Devexicon: The Developer's Lexicon </a>
+      <button class="uk-button uk-button-default" style="border-color: black; border-radius: 6px;" type="button">Language</button>
+        <div uk-dropdown>
+            <ul class="uk-nav uk-dropdown-nav">
+                <li class="uk-nav-header">Language</li>
+                <li><a id= "html" href="#">HTML</a></li>
+                <li><a id= "css" href="#">CSS</a></li>
+                <li><a id= "javascript" href="#">JavaScript</a></li>
+            </ul>
+        </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid" >
       <div class="row">
-        <div class="col-4 list-container">
+        <div class="col-4 list-container" style= "border: 6px solid black;">
           <div class="card">
             <ul class="list-group"></ul>
           </div>
         </div>
-
+        
         <div id="table"></div>
 
         <div class="col-3" style="align-self: flex-end;">
           <div class= "card-body">
-            <h3 class="card-title">Topic</h3>
+            <h3 class="card-title"> Create New:</h3>
             <p class="card-text">
                 <input id="topic" type="text" aria-label="topic" placeholder="Topic" class="form-control">
                 <input id="definition" type="text" aria-label="definition" placeholder="Definition" class="form-control">
@@ -55,32 +62,17 @@
     <div>
    
 
-      <a class="uk-button uk-button-default" href=""></a>
-
-      <button class="uk-button uk-button-default"></button>
-      
-      <!-- <button class="uk-button uk-button-default" disabled></button> --> 
-
-      <div class="uk-button-group">
-        <button class="uk-button uk-button-default"></button>
-        <button class="uk-button uk-button-default"></button>
-        <button class="uk-button uk-button-default"></button>
-    </div>
+    
     
 
   </div>
+</div>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://code.jquery.com/jquery-3.5.1.js' integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=' crossorigin= 'anonymous'></script>
+    <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js'></script>
+    <script src='./assets/js/add.js'></script>
+    <script src='./assets/js/view.js'></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.js"
-      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-      crossorigin="anonymous"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/uikit@3.3.7/dist/js/uikit-icons.min.js">
-    </script>  
-    <script src="./assets/js/view.js"></script>
-    <script src="./assets/js/add.js"></script>
   </body>
 </html>
