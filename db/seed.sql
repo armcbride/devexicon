@@ -17,7 +17,7 @@ VALUES ('Objects','A collection of named values.','car = {make:"Hyundai", model:
 INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('Properties', 'The values connected to an object.', 'car.model','javaScript');
 
---HTML
+-- HTML
 INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('HTML', 'Hyper Text Markup Language is for creating a webpage. HTML includes writing, links, pictures, sound, and even video', '<!DOCTYPE html>
 <html lang="en">
@@ -35,7 +35,7 @@ VALUES ('Attributes', 'Provide additional information about an element and are s
 INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('Links', 'HTML links are known as Hyperlinks and direct the user to other web addresses or pages within the same URL.', '<a href="url">link text</a>','HTML');
 
---CSS
+-- CSS
 INSERT INTO Definitions(topic, definition, example, language)
 VALUES ('CSS','cascading style sheet which describes how HTML elements are displayed on screen','body {background-color: white;}','CSS');
 
@@ -55,4 +55,4 @@ INSERT INTO Definitions(topic, definition, example, language)
 VALUES ('Selectors','There are several categories of different selectors used to find the HTML elements to style: simple, combinator, pseudo-class, pseudo-elements selectors, and attribute selectors','simple: elements based on name, id, and class; combinator: elements based on a specific relationship between them; pseudo-class: elements based on a certain state; pseudo-elements: select and style part of an element; attribute: elements based on an attribute or attribute value','CSS');
 
 INSERT INTO Definitions(topic, definition, example, language)
-VALUES ('Inserting CSS', 'Three ways to add CSS to an HTML page: external: a link to a .css file, internal: css inside of <style></style> tags in the HTML file and inline: inside the HTML tag with a style attribute', '<link rel="stylesheet href="style.css> , <style> *{ background-color: black;}, or <h1 style="font-size: 12px;">Hello</h1>', 'CSS')
+VALUES ('Inserting CSS', 'Three ways to add CSS to an HTML page: external: a link to a .css file, internal: css inside of style tags in the HTML file and inline: inside the HTML tag with a style attribute', '<link rel="stylesheet href="style.css> , <style> *{ background-color: white;}, or <h1 style="font-size: 12px;">Hello</h1>', 'CSS')
