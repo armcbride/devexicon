@@ -12,7 +12,7 @@ $(document).ready(function () {
                 table.append(`<p>${language.id}</p>
                 <p>Topic: ${language.topic}</p>
                 <p>Definition: ${language.definition}</p>
-                <p>Example: <textarea>${language.example}</textarea></p>
+                <p>Example: <textarea readonly>${language.example}</textarea></p>
                 <p>Language: ${language.language}</p>`);
             });
         });
