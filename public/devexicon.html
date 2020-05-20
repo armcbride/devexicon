@@ -26,32 +26,35 @@
         <div uk-dropdown>
             <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-nav-header">Language</li>
-                <li><a id= "html" href="#">HTML</a></li>
-                <li><a id= "css" href="#">CSS</a></li>
-                <li><a id= "javascript" href="#">JavaScript</a></li>
+                <li><button class="uk-button" id= "html">HTML</button></li>
+                <li><button class="uk-button" id= "css">CSS</button></li>
+                <li><button class="uk-button" id= "javascript">JavaScript</button></li>
             </ul>
         </div>
     </nav>
-    <div class="container-fluid" >
-      <div class="row">
-        <div class="col-4 list-container" style= "border: 6px solid black;">
-          <div class="card">
-            <ul class="list-group"></ul>
-          </div>
-        </div>
+
+    <div class="uk-flex">
+      <div class="uk-card uk-card-default uk-card-body">
+        <ul class="list-group"></ul>
+      </div>
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left"><div id="table"></div></div>
+      <div class="uk-card uk-card-default uk-card-body uk-margin-left "> <div class= "sticky-top card-body">
+        <h3 class="card-title"> Create New:</h3>
+        <p class="card-text">
+            <input id="topic" type="text" aria-label="topic" placeholder="Topic" class="form-control">
+            <input id="definition" type="text" aria-label="definition" placeholder="Definition" class="form-control">
+            <input id="example" type="text" aria-label="example" placeholder= "Example" class="form-control">
+            <input id="language" type="text" aria-label="language" placeholder= "Coding Language" class="form-control">
+          <button id="add-btn" type="submit" class="btn btn-light">Add</button>
+          </div></div>
+  </div>
+
+  
         
         <div id="table"></div>
 
         <div class="col-3" style="align-self: flex-end;">
-          <div class= "card-body">
-            <h3 class="card-title"> Create New:</h3>
-            <p class="card-text">
-                <input id="topic" type="text" aria-label="topic" placeholder="Topic" class="form-control">
-                <input id="definition" type="text" aria-label="definition" placeholder="Definition" class="form-control">
-                <input id="example" type="text" aria-label="example" placeholder= "Example" class="form-control">
-                <input id="language" type="text" aria-label="language" placeholder= "Coding Language" class="form-control">
-              <button id="add-btn" type="submit" class="btn btn-light">Add</button>
-              </div>
+         
             
           </div>
         </div>
