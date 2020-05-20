@@ -14,8 +14,6 @@ $(document).ready(function () {
                 table.append('<p>Definition: ' + language.definition + '</p>');
                 table.append('<p>Example:<textarea> ' + language.example + '</textarea></p>');
                 table.append('<p>Language: ' + language.language + '</p>');
-                table.append('<p>Created At: ' + language.createdAt + '</p>');
-                table.append('<p>Updated At: ' + language.updatedAt + '</p>');
             });
         });
     });
