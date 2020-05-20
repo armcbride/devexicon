@@ -17,6 +17,12 @@ VALUES ('Objects','A collection of named values.','car = {make:"Hyundai", model:
 INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('Properties', 'The values connected to an object.', 'car.model','javaScript');
 
+INSERT INTO Definitions (topic, definition, example, language)
+VALUES ('Arguments', 'values passed to the function when it is invoked', '','javaScript');
+
+INSERT INTO Definitions (topic, definition, example, language)
+VALUES ('Parameters', 'variables listed as a part of the function definition', '','javaScript');
+
 -- HTML
 INSERT INTO Definitions (topic, definition, example, language)
 VALUES ('HTML', 'Hyper Text Markup Language is for creating a webpage. HTML includes writing, links, pictures, sound, and even video', '<!DOCTYPE html>
