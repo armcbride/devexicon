@@ -14,6 +14,7 @@ $(document).ready(function () {
                                 <p>Definition: ${language.definition}</p>
                                 <p>Example: <textarea>${language.example}</textarea></p>
                                 <p>Language: ${language.language}</p>`);
+            });
         });
     });
 });
