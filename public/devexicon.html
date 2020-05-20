@@ -20,53 +20,41 @@
 
   <body>
     <div class="container-body" style= "background-color: azure;">
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand">Devexicon: The Developer's Lexicon </a>
-      <button class="uk-button uk-button-default" style="border-color: black; border-radius: 6px;" type="button">Language</button>
-        <div uk-dropdown>
-            <ul class="uk-nav uk-dropdown-nav">
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand">Devexicon: The Developer's Lexicon </a>
+          <button class="uk-button uk-button-default" style="border-color: black; border-radius: 6px;" type="button">Language</button>
+            <div uk-dropdown>
+              <ul class="uk-nav uk-dropdown-nav">
                 <li class="uk-nav-header">Language</li>
                 <li><button class='language'>HTML</button></li>
                 <li><button class='language' >CSS</button></li>
                 <li><button class='language'>JavaScript</button></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container-fluid" >
-      <div class="row">
-        <div class="col-4 list-container" style= "border: 6px solid black;">
-          <div class="card">
-            <ul class="list-group"></ul>
-          </div>
-        </div>
-        
-        <div id="table"></div>
+              </ul>
+            </div>
+        </nav>
 
-        <div class="col-3" style="align-self: flex-end;">
-          <div class= "card-body">
-            <h3 class="card-title"> Create New:</h3>
+        <div class="uk-flex">
+          <div class="uk-card uk-card-default uk-card-body"><div class= "card-body sticky-top">
+            <h3 class="card-title">Create New:</h3>
             <p class="card-text">
                 <input id="topic" type="text" aria-label="topic" placeholder="Topic" class="form-control">
                 <input id="definition" type="text" aria-label="definition" placeholder="Definition" class="form-control">
                 <input id="example" type="text" aria-label="example" placeholder= "Example" class="form-control">
                 <input id="language" type="text" aria-label="language" placeholder= "Coding Language" class="form-control">
               <button id="add-btn" type="submit" class="btn btn-light">Add</button>
+              </p>
               </div>
-            
-          </div>
-        </div>
+            </div>
 
-
+          <div class="uk-card uk-card-default uk-card-body uk-margin-left"><div id="table"></div></div>
+          <div class="uk-card uk-card-default uk-card-body uk-margin-left"><ul class="list-group"></ul></div>
       </div>
+
+
+      <!-- end of container -->
     </div>
-    <div>
-   
-
-    
     
 
-  </div>
-</div>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <script src='https://code.jquery.com/jquery-3.5.1.js' integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=' crossorigin= 'anonymous'></script>
     <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js'></script>
