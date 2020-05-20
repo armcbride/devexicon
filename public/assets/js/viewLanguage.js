@@ -10,11 +10,13 @@ $(document).ready(function () {
             console.log(res);
             res.forEach(language => {
                 table.append(`<p>${language.id}</p>
-                                <p>Topic: ${language.topic}</p>
-                                <p>Definition: ${language.definition}</p>
-                                <p>Example: <textarea>${language.example}</textarea></p>
-                                <p>Language: ${language.language}</p>`);
+                <p>Topic: ${language.topic}</p>
+                <p>Definition: ${language.definition}</p>
+                <p>Example: <textarea>${language.example}</textarea></p>
+                <p>Language: ${language.language}</p>`);
             });
         });
     });
 });
+
+
