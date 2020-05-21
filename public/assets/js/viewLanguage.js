@@ -12,11 +12,10 @@ $(document).ready(function () {
         $.get('/api/definitions/language/' + languageSearch, function(res) {
             console.log(res);
             res.forEach(language => {
-                htmlData.append(`<p>${language.id}</p>
-                <p>Topic: ${language.topic}</p>
-                <p>Definition: ${language.definition}</p>
-                <p>Example: <textarea readonly>${language.example}</textarea></p>
-                <p>Language: ${language.language}</p>`);
+                htmlData.append(`<p style="font-size: 18px">${language.topic}</p>
+                <p style="font-size: 18px">Definition: ${language.definition}</p>
+                <p style="font-size: 18px">Example: <textarea readonly>${language.example}</textarea></p>
+                <p style="font-size: 18px">Language: ${language.language}</p>`);
             });
         });
     });
