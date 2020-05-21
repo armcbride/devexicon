@@ -18,17 +18,17 @@ $(document).ready(function () {
         //   <p>Language: ${definition.language}</p></div>
          
 
-$deck.append(` <div class="card" style="width: 18rem;">
+$deck.append(` <div class="card" style="width: 18rem; box-shadow: 5px 10px; margin: 5px;">
 
 <div class="card-body">
-  <h5 class="card-title">Topic: ${definition.language}</h5>
-  <p class="card-text">Example: <textarea readonly>${definition.example}</textarea></p>
-  <p class="card-text">Definition: ${definition.definition}</p>
+  <h3 class="card-title">${definition.language}</h3>
   <p class="card-text">Topic: ${definition.topic}</p>
+  <p class="card-text">Definition: ${definition.definition}</p>
+  <p class="card-text">Example: <textarea readonly>${definition.example}</textarea></p>
 </div>
 </div>`)
         });
       });
-    };
+    }
     getDefinitions();
 });
