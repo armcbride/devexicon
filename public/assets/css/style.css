@@ -1,3 +1,9 @@
 lang-nav{
     z-index: 2;
 }
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
