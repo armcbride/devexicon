@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta http-equiv='X-UA-Compatible' content='ie=edge'/>
     <title>Devexicon</title>
 
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css'/>
@@ -19,69 +19,55 @@
   </head>
 
   <body data-spy='scroll' data-target='.navbar' data-offset='50'>
-    <div class="container-body" style= "background-color: azure;">
-      <nav class="navbar navbar-dark bg-dark sticky-top">
-        <a href='/'class="navbar-brand">Devexicon: The Developer's Lexicon </a>
-        <li class="nav-item"><a href="#html" id='html' class="nav-link active bg-warning language" style="color:black">HTML</a></li>
-        <li class="nav-item"><a href="#css" id='css' class="nav-link active bg-primary language" style="color:white">CSS</a></li>
-        <li class="nav-item"><a href="#javascript" id='javascript' class="nav-link active bg-danger language" style="color:black">Javascript</a></li>
+    <div class='container-body' style= 'background-color: azure;'>
+      <nav class='navbar navbar-dark bg-dark sticky-top'>
+        <a href='/'class='navbar-brand'>Devexicon: The Developer's Lexicon </a>
+        <li class='nav-item'><a href='#html' id='html' class='nav-link active bg-warning language' style='color:black'>HTML</a></li>
+        <li class='nav-item'><a href='#css' id='css' class='nav-link active bg-primary language' style='color:white'>CSS</a></li>
+        <li class='nav-item'><a href='#javascript' id='javascript' class='nav-link active bg-danger language' style='color:black'>Javascript</a></li>
       </nav>
 
-        <!-- <button class="uk-button uk-button-default" style="border-color: black; border-radius: 6px;" type="button">Language</button>
-            <div uk-dropdown>
-              <ul class="uk-nav uk-dropdown-nav lang-nav">
-                <li class="uk-nav-header">Language</li>
-                <li><button class='language'>HTML</button></li>
-                <li><button class='language' >CSS</button></li>
-                <li><button class='language'>JavaScript</button></li>
-              </ul>
-            </div> -->
-        </nav>
-
         <!-- Language info -->
-        <div id="html" class="container-fluid bg-warning" style="padding-top:70px;padding-bottom:70px">
+        <div id='html' class='container-fluid bg-warning' style='padding-top:70px;padding-bottom:70px'>
         <h1>HTML</h1>
         <p id='htmlData'></p>
         </div>
-        <div id="css" class="container-fluid bg-primary" style="color:white;padding-top:70px;padding-bottom:70px">
-            <h1 style="color:white">CSS</h1>
+        <div id='css' class='container-fluid bg-primary' style='color:white;padding-top:70px;padding-bottom:70px'>
+            <h1 style='color:white'>CSS</h1>
             <p id='cssData'></p>
             </div>
-            <div id="javascript" class="container-fluid bg-danger" style="padding-top:70px;padding-bottom:70px">
+            <div id='javascript' class='container-fluid bg-danger' style='padding-top:70px;padding-bottom:70px'>
                 <h1>Javascript</h1>
                 <p id='javascriptData'></p>
                 </div>
-
-        <div class="uk-flex">
-          <div class="uk-card uk-card-default uk-card-body"><div class= "card-body sticky-top">
-            <h3 class="card-title">Create New:</h3>
-            <p class="card-text">
-                <input id="topic" type="text" aria-label="topic" placeholder="Topic" class="form-control">
-                <input id="definition" type="text" aria-label="definition" placeholder="Definition" class="form-control">
-                <input id="example" type="text" aria-label="example" placeholder= "Example" class="form-control">
-                <input id="language" type="text" aria-label="language" placeholder= "Coding Language" class="form-control">
-              <button id="add-btn" type="submit" class="btn btn-light">Add</button>
               </p>
               </div>
             </div>
-          
-            
-          <div class="uk-card uk-card-default uk-card-body uk-margin-left"><div id="table"></div></div>
-          <div class="uk-card uk-card-default uk-card-body uk-margin-left"><ul class="list-group"></ul></div>
       </div>
 
-
+      <!-- <div class='uk-bottom'> -->
+        <div class='uk-card-primary'>
+          <div class= 'uk-card-body'>
+          <h3 class='card-title'>Create New:</h3>
+          <p class='card-text'>
+              <input id='topic' type='text' aria-label='topic' placeholder='Topic' class='form-control'>
+              <input id='definition' type='text' aria-label='definition' placeholder='Definition' class='form-control'>
+              <input id='example' type='text' aria-label='example' placeholder= 'Example' class='form-control'>
+              <input id='language' type='text' aria-label='language' placeholder= 'Coding Language' class='form-control'>
+            <button id='add-btn' type='submit' class='btn btn-primary'>Add</button>
+          </p>
+        </div>
+      </div>
       <!-- end of container -->
     </div>
     
-
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
-    <script src='https://code.jquery.com/jquery-3.5.1.js' integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=' crossorigin= 'anonymous'></script>
+    <script src='https://code.jquery.com/jquery-3.5.1.js' integrity='sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/       C8ycbRAkjPDc=' crossorigin= 'anonymous'></script>
     <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/js/uikit-icons.min.js'></script>
     <script src='./assets/js/add.js'></script>
     <script src='./assets/js/view.js'></script>
-    <script src="./assets/js/viewLanguage.js"></script>
+    <script src='./assets/js/viewLanguage.js'></script>
 
   </body>
 </html>
