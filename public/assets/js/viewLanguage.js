@@ -1,14 +1,14 @@
-let htmlData = $("#htmlData");
-let cssData = $("#cssData");
-let javascriptData = $("#javascriptData");
+let htmlData = $('#htmlData');
+let cssData = $('#cssData');
+let javascriptData = $('#javascriptData');
 
 $(document).ready(function () {
-  $("#html").on("click", function () {
+  $('#html').on('click', function () {
     htmlData.empty();
 
     let languageSearch = $(this).html();
 
-    $.get("/api/definitions/language/" + languageSearch, function (res) {
+    $.get('/api/definitions/language/' + languageSearch, function (res) {
       console.log(res);
       res.forEach((language) => {
         htmlData.append(`<p>${language.id}</p>
@@ -20,12 +20,12 @@ $(document).ready(function () {
     });
   });
 
-  $("#css").on("click", function () {
+  $('#css').on('click', function () {
     cssData.empty();
 
     let languageSearch = $(this).html();
 
-    $.get("/api/definitions/language/" + languageSearch, function (res) {
+    $.get('/api/definitions/language/' + languageSearch, function (res) {
       console.log(res);
       res.forEach((language) => {
         cssData.append(`<p>${language.id}</p>
@@ -37,12 +37,12 @@ $(document).ready(function () {
     });
   });
 
-  $("#javascript").on("click", function () {
+  $('#javascript').on('click', function () {
     javascriptData.empty();
 
     let languageSearch = $(this).html();
 
-    $.get("/api/definitions/language/" + languageSearch, function (res) {
+    $.get('/api/definitions/language/' + languageSearch, function (res) {
       console.log(res);
       res.forEach((language) => {
         javascriptData.append(`<p>${language.id}</p>
