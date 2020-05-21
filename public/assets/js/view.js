@@ -33,7 +33,7 @@ $deck.append
 
 // uikit cards
 
-(`<div class="uk-card uk-card-hover uk-card-body uk-section uk-preserve-color  uk-tile uk-tile-default uk-padding-large uk-width-1-2@m">
+(`<div class="uk-card uk-card-hover uk-card-body uk-section uk-preserve-color uk-section-primary uk-width-1-2@m">
 <div class="uk-card-header">
     <div class="uk-card-badge uk-label">${definition.language}</div>
     <h3 class="uk-card-title">Topic: ${definition.topic}</h3>

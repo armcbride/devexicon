@@ -18,13 +18,13 @@
 
   </head>
 
-  <body data-spy='scroll' data-target='.navbar' data-offset='50'>
+  <body data-spy='scroll' data-target='navbar' data-offset='50'>
     <div class="container-body" style= "background-color: azure;">
       <nav class="navbar navbar-dark bg-dark sticky-top">
         <a class="navbar-brand">Devexicon: The Developer's Lexicon </a>
-        <li class="nav-item"><a href="#html" class="nav-link active bg-warning">HTML</a></li>
+        <li class="nav-item"><a href="#html" class="nav-link active bg-warning" style="color:black">HTML</a></li>
         <li class="nav-item"><a href="#css" class="nav-link active bg-primary" style="color:white">CSS</a></li>
-        <li class="nav-item"><a href="#javascript" class="nav-link active bg-danger">Javascript</a></li>
+        <li class="nav-item"><a href="#javascript" class="nav-link active bg-danger" style="color:black">Javascript</a></li>
 
         <!-- <button class="uk-button uk-button-default" style="border-color: black; border-radius: 6px;" type="button">Language</button>
             <div uk-dropdown>
@@ -51,7 +51,7 @@
                 <p>stuff</p>
                 </div>
 
-        <!-- <div class="uk-flex"> -->
+        <div class="uk-flex">
           <div class="uk-card uk-card-default uk-card-body"><div class= "card-body sticky-top">
             <h3 class="card-title">Create New:</h3>
             <p class="card-text">
@@ -59,7 +59,7 @@
                 <input id="definition" type="text" aria-label="definition" placeholder="Definition" class="form-control">
                 <input id="example" type="text" aria-label="example" placeholder= "Example" class="form-control">
                 <input id="language" type="text" aria-label="language" placeholder= "Coding Language" class="form-control">
-              <button id="add-btn" type="submit" class="btn btn-light">Add</button>
+              <button id="add-btn" type="submit" class="btn btn-primary">Add</button>
               </p>
               </div>
             </div>
@@ -84,3 +84,39 @@
 
   </body>
 </html>
+
+
+<!-- $(document).ready(function () {
+    // let list = document.querySelector('.list-group');
+    const $deck=$('.deck')
+    function getDefinitions() {
+        $.ajax({
+          method: "GET",
+          url: "/api/definitions/",
+        }).then((res) => {
+  
+          res.forEach(definition => {
+          //  let li = $('<li/>')
+          //   .appendTo(list);
+  
+          // <div class= "definitions">${definition.id}</p>
+          //   <p>Topic: ${definition.topic}</p>
+          //   <p>Definition: ${definition.definition}</p>
+          //   <p>Example: <textarea readonly>${definition.example}</textarea></p>
+          //   <p>Language: ${definition.language}</p></div>
+           
+  
+  $deck.append(` <div class="card" style="width: 18rem; box-shadow: 5px 10px; margin: 5px;">
+  
+  <div class="card-body">
+    <h3 class="card-title">${definition.language}</h3>
+    <p class="card-text">Topic: ${definition.topic}</p>
+    <p class="card-text">Definition: ${definition.definition}</p>
+    <p class="card-text">Example: <textarea readonly>${definition.example}</textarea></p>
+  </div>
+  </div>`)
+          });
+        });
+      }
+      getDefinitions();
+  }); -->
