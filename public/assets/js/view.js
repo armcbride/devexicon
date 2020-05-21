@@ -14,10 +14,8 @@ $(document).ready(function () {
 li.append(`<div class= "definitions">${definition.id}</p>
           <p>Topic: ${definition.topic}</p>
           <p>Definition: ${definition.definition}</p>
-          <p>Example: <textarea>${definition.example}</textarea></p>
-          <p>Language: ${definition.language}</p>
-          <p>Created: ${definition.createdAt}</p>
-          <p>Updated: ${definition.updatedAt}</p></div>`)
+          <p>Example: <textarea readonly>${definition.example}</textarea></p>
+          <p>Language: ${definition.language}</p></div>`)
         });
       });
     };
