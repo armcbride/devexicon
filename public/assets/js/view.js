@@ -19,6 +19,8 @@ $(document).ready(function () {
          
 
 $deck.append
+// bootstrap cards
+
 // (` <div class="card" style="width: 18rem; box-shadow: 5px 10px; margin: 5px;">
 
 // <div class="card-body">
@@ -29,12 +31,18 @@ $deck.append
 // </div>
 // </div>`)
 
-(`<div class="uk-card uk-card-default uk-card-body uk-width-1-2@m">
+// uikit cards
+
+(`<div class="uk-card uk-card-hover uk-card-body uk-section uk-preserve-color  uk-tile uk-tile-default uk-padding-large uk-width-1-2@m">
+<div class="uk-card-header">
     <div class="uk-card-badge uk-label">${definition.language}</div>
     <h3 class="uk-card-title">Topic: ${definition.topic}</h3>
     <p>Definition: ${definition.definition}</p>
     <div>Example: <textarea readonly>${definition.example}</div>
+    <div class="uk-card-footer"></div>
 </div>`);
+
+
         });
       });
     }
