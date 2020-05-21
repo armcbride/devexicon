@@ -12,10 +12,10 @@ $(document).ready(function () {
         $.get('/api/definitions/language/' + languageSearch, function(res) {
             console.log(res);
             res.forEach(language => {
-                htmlData.append(`<p style="font-size: 18px">${language.topic}</p>
-                <p style="font-size: 18px">Definition: ${language.definition}</p>
-                <p style="font-size: 18px">Example: <textarea readonly>${language.example}</textarea></p>
-                <p style="font-size: 18px">Language: ${language.language}</p>`);
+                htmlData.append(`<div style="font-family: 'Balsamiq Sans', cursive; font-size: 18px;"><p style= "text-decoration: underline;">${language.topic}</p>
+                <p><div style= "font-weight: bold;">Definition:</div><br> ${language.definition}</p>
+                <p><div style= "font-weight: bold;">Example:</div><br> <textarea readonly>${language.example}</textarea></p>
+                <p><div style= "font-weight: bold;">Language:</div> ${language.language}</p></div>`);
             });
         });
     });
