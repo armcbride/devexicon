@@ -1,8 +1,8 @@
-const db = require("../models");
+const db = require('../models');
 
 module.exports = function(app){
   //GET route for all definitions
-  app.get("/api/definitions/", function(req, res) {
+  app.get('/api/definitions/', function(req, res) {
     db.Definitions.findAll({})
       .then(function(dbDefinitions) {
         res.json(dbDefinitions);
@@ -10,7 +10,7 @@ module.exports = function(app){
   });
 
 //GET route for all in specific category
-  app.get("/api/definitions/language/:language", function(req, res) {
+  app.get('/api/definitions/language/:language', function(req, res) {
     db.Definitions.findAll({
       where: {
         language: req.params.language
@@ -22,7 +22,7 @@ module.exports = function(app){
   });
 
   //POST route for creating a new definition
-  app.post("/api/definition", function(req, res) {
+  app.post('/api/definition', function(req, res) {
     console.log(req.body);
     db.Definitions.create({
       topic: req.body.topic,
@@ -36,7 +36,7 @@ module.exports = function(app){
   });
   
 // DELETE Route for deleting definitions
-  app.delete("/api/definitions/:id", function(req, res) {
+  app.delete('/api/definitions/:id', function(req, res) {
     db.Definitions.destroy({
       where: {
         id: req.params.id
