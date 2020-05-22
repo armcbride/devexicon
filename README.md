@@ -16,7 +16,7 @@
   A Developers Definition Lexicon
   <hr>
   <div id="install"><h2>Installation</h2> </div>
-  <p></p>
+  <p>Create an link database to config file, npm install necessary packages, add definitions and languages as desired.</p>
   <hr>
   <div id="tech"><h2>Technology</h2></div>           
   <p> HTML, CSS, Bootstrap, APIs, JSON, Node.Js, Express, JavaScript, MySQL, Heroku,Handlebars</p>
@@ -28,7 +28,7 @@
   <p><img align="left" src= "https://img.shields.io/badge/License-MIT-blue"></p><br>
   <hr>
   <div id="screen"><h2>Screenshots</h2></div>
-  <p><img src= ""><img src= ""><img src= ""></p>
+  <p><img src= "./public/assets/images/dev-page.PNG"><img src= "./public/assets/images/html-example.PNG"><br><img src= "./public/assets/images/css-example.PNG"><img src= "./public/assets/images/javascript-example.PNG"><br><img src= "./public/assets/images/dev-demo.gif"></p>
   <hr>
   <div id="contr"><h2>Contributors</h2> </div>
 
